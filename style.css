@@ -1,0 +1,114 @@
+body {
+  margin: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#root {
+  background-color: lightgray;
+  width: 400px;
+}
+
+#searchbar {
+  font-size: small;
+  margin: 4px;
+  width: 98%;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#notification {
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  flex: 1;
+  padding-left: 50px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.details {
+  flex: 2;
+  margin-top: 20px;
+  border: 1px solid #eee;
+  margin-right: 60px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rate {
+  font-weight: 500;
+  font-size: large;
+  flex: 3;
+  color: #222;
+}
+
+.name {
+  font-size: smaller;
+  flex: 2;
+  color: #555;
+}
+
+.unit {
+  font-size: smaller;
+  flex: 2;
+  color: #555;
+}
+
+.toast {
+  width: 200px;
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  font-size: 17px;
+  font-size: medium;
+  margin-left: 84px;
+}
+
+.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
